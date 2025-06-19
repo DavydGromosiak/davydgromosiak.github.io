@@ -1,0 +1,26 @@
+.header{
+    height: 110vh;
+    background: url(../images/Car.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 75px;
+    background: rgb(163, 149, 182, 65%);
+
+    color: #fff;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
