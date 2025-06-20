@@ -1,6 +1,25 @@
+
+/* Переменные */
+:root {
+    --color-green: #71bc21;
+    --background-black-opacity: rgba(10, 10, 10, 0.50);;
+}
+/* Общие  Стили */
+a {
+    color: var(--color-green);
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Header Стили */
+
 .header{
     height: 110vh;
-    background: url(../images/Car.jpg);
+    background: url(../images/Black.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -10,17 +29,59 @@
 .header-top{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    height: 75px;
-    background: rgb(163, 149, 182, 65%);
+    height: 80px;
+    background: var(--background-black-opacity);
 
     color: #fff;
 }
+.header-top a{
+    color: white;
+}
+
+.header-top a.active{
+    color: var(--color-green);
+}
+
+.logo{
+    font-size: 36px;
+}
+
 .menu{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-element{
+    margin-right: 10px;
+    font-size: 22px;
+}
+.menu-element:last-of-type{
+    margin-right: 0;
+}
+
+.header-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    height: calc(100vh - 80px);
 
-
+    color: white;
+}
+.header-center__wrapper{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--background-black-opacity);
+    text-align: center;
+}
+.name{
+    font-size: 58px;
+    line-height: 74px;
+}
+.description{
+    font-size: 22px;
 }
